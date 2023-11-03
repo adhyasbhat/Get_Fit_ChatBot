@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Fit</title>
+    <link rel="stylesheet" href="faq.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    
+    <div>
+      <button class="toggleBtn" onclick="toggleTheme()"><img src="sun.png" alt="" class="toggleImg"></button>
+      <div class="circle">
+        <div class="outerCircle"></div>
+        <div class="innerCircle"></div>
+      </div>
+      <div class="heading">
+        <span class="weight changeColor">Weight </span
+        ><span class="management">Management</span>
+
+        <span class="changeColor"> and </span><span>Diet </span><span class="changeColor">Plan</span>
+      </div>
+      <div class="quote changeColor">
+        Your BODY can do it , Time to convince your MIND !
+      </div>
+      <div class="topBorder"></div>
+      <img src="weightlifter.png" alt="" class="image" />
+    </div>
+    <button class="popUpBtn">
+      <img src="chat.png" class="dietImg" alt="" onclick="popUp()" />
+    </button>
+    <div class="faqBlock" style="display: none">
+      <div class="chat">
+        <div class="col-12 closeDiv">
+          <img class="close" onclick="closeChat()" src="close.png" alt="" />
+        </div>
+        <hr style="color: #ece3ce" />
+
+        <div class="display"></div>
+        <div class="d-flex searchSection my-2">
+          <input
+            type="text"
+            class="enterQuestion mx-1"
+            onkeydown="enterSubmit(event)"
+          />
+          <button class="searchh m-1" onclick="submit()">
+            <img class="search" src="loupe.png" alt="" />
+          </button>
+          <button class="searchh" onclick="speechToText()">
+            <img src="voice-search.png" class="search" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="questions.js"></script>
+  <script src="faq.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>
